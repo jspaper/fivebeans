@@ -203,9 +203,9 @@ __id__: how this worker should identify itself in log events
 __host__: beanstalkd host  
 __port__: beanstalkd port  
 __handlers__: hash with handler objects, with handler types as keys  
-__ignoreDefault__: true if this worker should ignore the default tube
-__timeout__: timeout parameter used with on reserve_with_timeout, defaults to 10 (in seconds)
-__maxReserves__: maximum of reserves times, defaults to 30 tiems.
+__ignoreDefault__: true if this worker should ignore the default tube  
+__timeout__: timeout parameter used with on reserve_with_timeout, defaults to 10 (in seconds)  
+__maxReserves__: maximum of reserves times, defaults to 30 tiems
 
 #### start
 
@@ -418,7 +418,8 @@ maxReserves: 10
 __beanstalkd__: where to connect  
 __watch__: a list of tubes to watch.  
 __handlers__: a list of handler files to require  
-__ignoreDefault__: true if this worker should ignore the default tube
+__ignoreDefault__: true if this worker should ignore the default tube  
+__maxReserves__: worker maximum reserve times, default to 10 times.
 
 If the handler paths don't start with `/` the current working directory will be prepended to them before they are required.
 
