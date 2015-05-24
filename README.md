@@ -205,6 +205,7 @@ __port__: beanstalkd port
 __handlers__: hash with handler objects, with handler types as keys  
 __ignoreDefault__: true if this worker should ignore the default tube
 __timeout__: timeout parameter used with on reserve_with_timeout, defaults to 10 (in seconds)
+__maxReserves__: maximum of reserves times, defaults to 30 tiems.
 
 #### start
 
@@ -411,6 +412,7 @@ handlers:
     - "./handlers/greenpark.js"
     - "./handlers/knightsbridge.js"
 ignoreDefault: true
+maxReserves: 10
 ```
 
 __beanstalkd__: where to connect  
